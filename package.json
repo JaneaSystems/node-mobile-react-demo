@@ -1,0 +1,30 @@
+{
+  "name": "PouchAlbum",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "postinstall": "cd nodeproj && npm install",
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest"
+  },
+  "dependencies": {
+    "buffer": "5.0.6",
+    "react": "16.0.0-alpha.6",
+    "react-native": "0.44.2",
+    "react-native-fetch-blob": "0.10.5",
+    "react-native-progress": "3.2.1",
+    "react-native-prompt": "1.0.0",
+    "react-native-rest-client": "0.1.1",
+    "react-native-uuid": "1.4.9",
+    "react-navigation": "1.0.0-beta.11"
+  },
+  "devDependencies": {
+    "babel-jest": "20.0.3",
+    "babel-preset-react-native": "1.9.2",
+    "jest": "20.0.4",
+    "react-test-renderer": "16.0.0-alpha.6"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}

@@ -1,0 +1,6 @@
+framework module nodeLib {
+  umbrella header "nodeLib.h"
+
+  export *
+  module * { export * }
+}
