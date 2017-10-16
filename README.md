@@ -42,6 +42,12 @@ Instructions:
  - In the project settings (click on the project main node), in the `Signing` portion of the `General` tab, select a valid Team and handle the provisioning profile creation/update. If you get an error that the bundle identifier cannot be used, you can simply change the bundle identifier to a unique string by appending a few characters to it.
  - Run the app. If the build process doesn't start the app right away, you might have to go to `Settings>General` in the device and enter `Device Management` or `Profiles & Device Management` to manually accept the profile.
 
+#### Using the Application away from your development machine
+
+The default `Debug` configuration for iOS `react-native` apps needs to have access to a development server to load the `react-native` JS files. To make it easier to use our demo, the `Release` configuration should be already selected when you clone this project. [Instructions on how and why we did it can be found here.](https://facebook.github.io/react-native/docs/running-on-device.html#2-configure-release-scheme) This way, the `react-native` JS files will be packaged with the application instead of being loaded from the development server at runtime and the demo will be able to start without having to have network access to the development machine.
+
+If you don't have a `Apple Developer Program` membership, take into consideration that a free account's provisioning profiles are only valid for a period of 7 days, after which the application will stop working and will have to be redeployed with an updated provisioning profile.
+
 ### Running on desktop
 The `main.js` node script can also run on any desktop platform as a standalone Node.js app. All you have to do is install the node modules required and have node run the `nodeproj/main.js` file.
 
